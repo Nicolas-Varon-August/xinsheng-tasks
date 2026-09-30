@@ -30,7 +30,7 @@
     "epoch": 5,
     "train_loss": 0.1324
   },
-  "train_seconds": 79.3,
+  "train_seconds": 81.8,
   "history": [
     {
       "loss": 1.1122197955846786,

@@ -11,7 +11,9 @@
 | 05 | 飞书视频任务 | 飞书官方教程学习笔记与功能清单 | 清单完成，待观看填写 |
 
 实验报告统一放在 `实验报告/`，均包含「实验环境与条件、实验方法与过程、实验结果及分析、
-遇到的问题及处理情况」四部分。
+遇到的问题及处理情况」四部分。此外还有一份 **Word 版汇总报告**
+`实验报告/新生任务实验报告.docx`，按学院模板排版（封面 + 六个章节 + 12 张运行截图）。
+实际运行截图见 `screenshots/`。
 
 ---
 
@@ -58,7 +60,7 @@ python toy_lm.py                        # 因果掩码自检 + 唐诗 toy 语言
 
 ```text
 [epoch 6] train_loss=0.3526 train_acc=0.8556 dev_loss=0.4210 dev_acc=0.8417
-最佳 dev 准确率 = 0.8417（epoch 6），总耗时 48.3s
+最佳 dev 准确率 = 0.8417（epoch 6），总耗时 48.0s
 
 [通过] attention_correctness: {"pass": true, "max_abs_diff": 9.5367431640625e-07}
 [通过] causal_mask:           {"pass": true, "leaked_diff": 0.0}
@@ -107,7 +109,7 @@ python code/inference_cls.py
 
 ```text
 [epoch  5] train_loss=0.1324 dev_acc=0.9206 P=0.9510 R=0.9327 macroF1=0.9397
-最佳 macroF1 = 0.9397（epoch 5），耗时 79.3s
+最佳 macroF1 = 0.9397（epoch 5），耗时 81.8s
 
 [水果] (p=0.999)  苹果很甜，个头也大
 [书籍] (p=0.992)  这本书内容一般，纸张也薄

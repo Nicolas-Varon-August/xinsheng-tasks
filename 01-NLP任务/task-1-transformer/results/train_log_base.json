@@ -4,7 +4,7 @@
   "best_epoch": 6,
   "params_m": 0.999,
   "vocab_size": 3659,
-  "train_seconds": 48.3,
+  "train_seconds": 48.0,
   "device": "cuda",
   "config": {
     "vocab_size": 3659,

@@ -265,8 +265,10 @@ def main():
     key = ("dataset", "model", "mode", "lr", "layers", "hidden", "dropout", "epochs")
     if out.exists():   # 追加而不是覆盖；同配置（含超参）才覆盖
         old = json.loads(out.read_text(encoding="utf-8"))
+        # 兼容早期版本写出的结果文件（缺少 epochs 等字段）：缺失字段不参与比较
         old["results"] = [r for r in old["results"]
-                          if not any(all(r[k] == n[k] for k in key) for n in results)]
+                          if not any(all(r.get(k) == n.get(k) for k in key if k in r and k in n)
+                                     for n in results)]
         old["results"].extend(results)
         payload = old
     out.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")

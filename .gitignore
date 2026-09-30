@@ -21,3 +21,6 @@ _refs/
 *.tmp
 .DS_Store
 Thumbs.db
+
+# ===== IDE / PyCharm 工程配置 =====
+.idea/
