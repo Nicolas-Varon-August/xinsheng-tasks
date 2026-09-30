@@ -1,0 +1,99 @@
+{
+  "tag": "base",
+  "best_dev_acc": 0.8417,
+  "best_epoch": 6,
+  "params_m": 0.999,
+  "vocab_size": 3659,
+  "train_seconds": 48.3,
+  "device": "cuda",
+  "config": {
+    "vocab_size": 3659,
+    "num_classes": 2,
+    "d_model": 128,
+    "n_heads": 4,
+    "n_layers": 4,
+    "d_ff": 256,
+    "max_len": 200,
+    "dropout": 0.1,
+    "pooling": "mean",
+    "use_pe": true
+  },
+  "args": {
+    "data_dir": "C:\\Users\\33592\\OneDrive\\文档\\ChatGPT\\新生任务\\01-NLP任务\\task-1-transformer\\data",
+    "epochs": 8,
+    "batch_size": 64,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "d_model": 128,
+    "n_heads": 4,
+    "n_layers": 4,
+    "d_ff": 256,
+    "max_len": 200,
+    "dropout": 0.1,
+    "pooling": "mean",
+    "min_freq": 2,
+    "seed": 42,
+    "device": "auto",
+    "out": "C:\\Users\\33592\\OneDrive\\文档\\ChatGPT\\新生任务\\01-NLP任务\\task-1-transformer\\ckpt\\best.pt",
+    "tag": "base"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6701,
+      "train_acc": 0.595,
+      "dev_loss": 0.6426,
+      "dev_acc": 0.6175
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5996,
+      "train_acc": 0.6853,
+      "dev_loss": 0.6504,
+      "dev_acc": 0.7233
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.4638,
+      "train_acc": 0.7931,
+      "dev_loss": 0.6002,
+      "dev_acc": 0.7825
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.4229,
+      "train_acc": 0.8163,
+      "dev_loss": 0.445,
+      "dev_acc": 0.8275
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.3783,
+      "train_acc": 0.8432,
+      "dev_loss": 0.4566,
+      "dev_acc": 0.8192
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.3526,
+      "train_acc": 0.8556,
+      "dev_loss": 0.421,
+      "dev_acc": 0.8417
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.3307,
+      "train_acc": 0.8649,
+      "dev_loss": 0.4416,
+      "dev_acc": 0.8342
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.3234,
+      "train_acc": 0.8688,
+      "dev_loss": 0.4135,
+      "dev_acc": 0.8417
+    }
+  ]
+}

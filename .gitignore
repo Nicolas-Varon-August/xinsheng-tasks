@@ -1,0 +1,23 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# ===== 大体积数据与权重（用脚本重新下载/训练即可复现）=====
+# 图任务的数据集缓存（Cora/Citeseer/Flickr 原始文件与处理结果，合计约 900 MB）
+02-Graph任务/任务一-节点分类/data/*/
+!02-Graph任务/任务一-节点分类/data/README.md
+# 预训练模型的微调权重（147–390 MB，超过 GitHub 单文件 100 MB 限制）
+03-PLM任务/01-文本分类/ckpt/
+
+# ===== 上游参考仓库（只用于对照，不提交）=====
+_refs/
+
+# ===== 临时文件 =====
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
