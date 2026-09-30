@@ -179,22 +179,24 @@ python code/inference_cls.py
 
 ---
 
-## 四、提交到 GitHub
+## 四、已提交到 GitHub
+
+仓库地址：**https://github.com/Nicolas-Varon-August/xinsheng-tasks**
+
+该仓库包含本文件、三个任务的完整代码与运行输出、
+`screenshots/` 下 12 张 PyCharm 实际运行截图，以及 `实验报告/新生任务实验报告.docx`（Word 版，含全部截图）。
+
+若之后有修改需要重新上传：
 
 ```powershell
 cd "C:\Users\33592\OneDrive\文档\ChatGPT\新生任务"
-
 git add .
-git commit -m "新生任务：NLP/Graph/PLM 实验代码与实验报告"
-git branch -M main   # 当前分支为 master，改名为 main 后再 push
-
-# 先在 GitHub 网页上新建一个空仓库（不要勾选 README），然后：
-git remote add origin https://github.com/<你的用户名>/<仓库名>.git
-git push -u origin main
+git commit -m "修改说明"
+git push
 ```
 
-> `.gitignore` 已排除约 900 MB 的数据集缓存和 147–390 MB 的模型权重
-> （均可用第二节的命令重新生成），请确认 `git status` 里没有超大文件再 push。
+> `.gitignore` 已排除约 900 MB 的图数据集缓存与 147–390 MB 的 PLM 微调权重
+> （可用第二节的命令重新生成）。
 
 ## 五、目录总览
 
