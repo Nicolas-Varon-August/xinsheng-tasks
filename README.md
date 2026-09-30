@@ -1,17 +1,15 @@
 # 新生任务实验代码与报告
 
-本仓库为新生任务的完整提交材料，包含 5 个任务的可运行代码、实验报告与运行说明。
+本仓库为新生任务的完整提交材料，包含 3 个入门实验的可运行代码、运行截图与实验报告。
 
 | 编号 | 任务 | 交付内容 | 状态 |
 |---|---|---|---|
 | 01 | NLP 任务（[nlp-beginner](https://github.com/FudanNLP/nlp-beginner)） | 从零手写 Transformer + ChnSentiCorp 情感分类，自检 3/3 通过，dev 准确率 **0.8417** | 完成 |
 | 02 | Graph 任务（[graph_beginner](https://github.com/Maxioo/graph_beginner)） | GCN/GAT/GraphSAGE/GIN × 全图/采样 × Cora/Citeseer/Flickr，共 24 组对比 + 参数消融 | 完成 |
 | 03 | PLM 任务（[transformers_tasks](https://github.com/HarderThenHarder/transformers_tasks)） | 中文评论八分类微调，bert-base-chinese **macro F1 0.9397** | 完成 |
-| 04 | 论文阅读任务 | 小论文 / 大论文写作要点学习笔记（附件待补充） | 框架完成，待附件 |
-| 05 | 飞书视频任务 | 飞书官方教程学习笔记与功能清单 | 清单完成，待观看填写 |
 
 实验报告统一放在 `实验报告/`，均包含「实验环境与条件、实验方法与过程、实验结果及分析、
-遇到的问题及处理情况」四部分。此外还有一份 **Word 版汇总报告**
+遇到的问题及处理情况」四部分。此外还有一份 **Word 版实验报告**
 `实验报告/新生任务实验报告.docx`，按学院模板排版（封面 + 六个章节 + 12 张运行截图）。
 实际运行截图见 `screenshots/`。
 
@@ -156,26 +154,25 @@ python code/inference_cls.py
 --dataset cora --run-all --epochs 100 --tag cora
 ```
 
-### 3.3 需要截的图（提交用）
-
-> 下表列出的 12 张截图已在 PyCharm Community Edition 2024.3.4 中实际运行并截取，统一放在 `screenshots/`（索引见 `screenshots/README.md`），并已全部嵌入 `实验报告/新生任务实验报告.docx`。
+### 3.3 运行截图清单
 
 | # | 截图内容 | 来源 |
 |---|---|---|
-| 1 | 数据下载成功（`train: 9600 条`） | 运行 `data/download.py` 的 Run 窗口 |
-| 2 | NLP 训练过程 + `最佳 dev 准确率 = 0.8417` | 运行 `train.py` |
-| 3 | NLP 自检三个 `[通过]` | 运行 `eval/run.py` |
-| 4 | 注意力热图 | 打开 `figures/attn_negative.png` |
-| 5 | toy LM 困惑度与生成样例 | 运行 `toy_lm.py` |
-| 6 | Graph 8 组对比结果 | 运行 `train_node_cls.py --run-all` |
-| 7 | Graph 结果 JSON | 打开 `results/node_cls_cora.json` |
-| 8 | PLM 训练 + `最佳 macroF1 = 0.9397` | 运行 `code/train_cls.py` |
-| 9 | PLM 推理预测结果 | 运行 `code/inference_cls.py` |
-| 10 | PLM 训练曲线 | 打开 `figures/train_curve_bert.png` |
-| 11 | PyCharm 解释器配置页（证明用 conda 环境跑通） | Settings → Python Interpreter |
+| 1 | PyCharm 解释器配置页（conda 环境 `xinsheng`） | Settings → Python Interpreter |
+| 2 | 数据下载成功（`train: 9600 条`） | 运行 `data/download.py` |
+| 3 | NLP 训练过程 + `最佳 dev 准确率 = 0.8417` | 运行 `train.py` |
+| 4 | NLP 自检三个 `[通过]` | 运行 `eval/run.py` |
+| 5 | 注意力热图脚本运行输出 | 运行 `viz_attention.py --auto-head` |
+| 6 | 注意力热图 `attn_negative.png` | 打开 `figures/attn_negative.png` |
+| 7 | toy LM 困惑度与生成样例 | 运行 `toy_lm.py` |
+| 8 | Graph 8 组对比结果 | 运行 `train_node_cls.py --run-all` |
+| 9 | Graph 结果 JSON | 打开 `results/node_cls_cora.json` |
+| 10 | PLM 训练 + `最佳 macroF1 = 0.9397` | 运行 `code/train_cls.py` |
+| 11 | PLM 训练曲线 | 打开 `figures/train_curve_bert.png` |
+| 12 | PLM 推理预测结果 | 运行 `code/inference_cls.py` |
 
-> 建议把图片单独放到仓库根目录的 `screenshots/` 文件夹，命名如
-> `01-nlp-train.png`、`02-graph-cora.png`、`03-plm-bert.png`，与报告一一对应。
+以上 12 张截图存于 `screenshots/`（索引见 `screenshots/README.md`），
+并已全部嵌入 `实验报告/新生任务实验报告.docx`。
 
 ---
 
@@ -208,8 +205,6 @@ git push
 ├── 01-NLP任务/                    # 任务一：从零实现 Transformer
 ├── 02-Graph任务/                  # 任务二：GNN 节点分类
 ├── 03-PLM任务/                    # 任务三：预训练模型微调
-├── 04-论文阅读任务/                # 任务四：论文写作指导学习笔记
-├── 05-飞书视频任务/                # 任务五：飞书视频学习笔记
-├── 实验报告/                      # 四份实验报告（环境/方法/结果/问题）
+├── 实验报告/                      # 实验报告（环境/方法/结果/问题）
 └── screenshots/                  # 运行截图 12 张（PyCharm 实际运行，含索引 README）
 ```
