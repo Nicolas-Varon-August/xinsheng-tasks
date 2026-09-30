@@ -89,7 +89,7 @@ python train_node_cls.py --dataset cora --model gcn --mode full --layers 4 --hid
 
 ```text
 >>> cora | gat | full | layers=2 hidden=64 lr=0.01
-    test_acc=0.8210  macro_f1=0.8175  val_acc=0.7920  time=0.77s  peak_mem=93.6MB
+    test_acc=0.8210  macro_f1=0.8175  val_acc=0.7920  time=0.67s  peak_mem=93.6MB
 ```
 
 > Flickr 的数据需要手动准备一次，见 `02-Graph任务/任务一-节点分类/data/README.md`。
