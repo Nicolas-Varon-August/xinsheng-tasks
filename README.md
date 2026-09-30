@@ -158,6 +158,8 @@ python code/inference_cls.py
 
 ### 3.3 需要截的图（提交用）
 
+> 下表列出的 12 张截图已在 PyCharm Community Edition 2024.3.4 中实际运行并截取，统一放在 `screenshots/`（索引见 `screenshots/README.md`），并已全部嵌入 `实验报告/新生任务实验报告.docx`。
+
 | # | 截图内容 | 来源 |
 |---|---|---|
 | 1 | 数据下载成功（`train: 9600 条`） | 运行 `data/download.py` 的 Run 窗口 |
@@ -184,7 +186,7 @@ cd "C:\Users\33592\OneDrive\文档\ChatGPT\新生任务"
 
 git add .
 git commit -m "新生任务：NLP/Graph/PLM 实验代码与实验报告"
-git branch -M main
+git branch -M main   # 当前分支为 master，改名为 main 后再 push
 
 # 先在 GitHub 网页上新建一个空仓库（不要勾选 README），然后：
 git remote add origin https://github.com/<你的用户名>/<仓库名>.git
@@ -207,5 +209,5 @@ git push -u origin main
 ├── 04-论文阅读任务/                # 任务四：论文写作指导学习笔记
 ├── 05-飞书视频任务/                # 任务五：飞书视频学习笔记
 ├── 实验报告/                      # 四份实验报告（环境/方法/结果/问题）
-└── screenshots/                  # 运行截图（请自行补充）
+└── screenshots/                  # 运行截图 12 张（PyCharm 实际运行，含索引 README）
 ```
